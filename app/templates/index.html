@@ -21,19 +21,19 @@ TESTE PROJETO FILMES
                     {{ valida(form.sobeArquivo) }}
                 </div>
                 <div class="mb-3">
-                    {{ form.submit(class='btn btn-outilne-primary') }}
+                    {{ form.submit(class='btn btn-outline-primary') }}
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="row"> 
-        {% for filme in filmesPath %}   
-            <div class="col">       
-                <div class="card" style="width: 20rem;">
-                    <video width="320" height="150" controls>  
-                            <source src="{{ url_for('static', filename=filme) }}" type="video/mp4">
-                            {# <a href="{{ url_for('static', filename=filme) }}">CLIQUE AQUI</a> #}
+    <div class="row">
+        {% for filme in filmesPath %}
+            <div class="col mt-2">
+                <div class="card" style="width: 34rem;">
+                    <video width="100%" height="250" controls>
+                            <source src="{{ url_for('static', filename='filmesSeries/{}'.format(filme)) }}" type="video/mp4">
+                            {# <a href="{{ url_for('static', filename='filmesSeries/{}'.format(filme)) }}">CLIQUE AQUI</a> #}
                     </video>
                     <div class="card-body">
                         <h5 class="card-title"> {{ filme }}</h5>

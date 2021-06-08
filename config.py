@@ -1,10 +1,10 @@
 DEBUG = True
 
-UPLOAD_FOLDER = '/static'
-MAX_CONTENT_PATH = 16 * 1000 * 1000 * 1000
+UPLOAD_FOLDER = '/home/matheus/Documentos/projetoFilmes/app/static/filmesSeries'
+MAX_CONTENT_PATH = 1024 * 1024
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'mp4', 'mpeg'}
 
-SQLALCHEMY_DATABASE_URI = "mysql+pymsql://root@''@localhost:3306/filmes"
+SQLALCHEMY_DATABASE_URI = ""
 
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SECRET_KEY = "pythonFilmes"

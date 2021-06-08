@@ -1,4 +1,4 @@
-from app import login_user, render_template, redirect, url_for, login_required, current_user, request, logout_user, login_manager, Mail, Message, generate_password_hash, Blueprint, flash, session, timedelta, jwt, datetime, app
+from app import login_user, render_template, redirect, url_for, login_required, current_user, request, logout_user, login_manager, Mail, Message, generate_password_hash, Blueprint, flash, session, timedelta, jwt, datetime, api
 from app.login.forms import LoginForm, Recuperar, CadastroUsuario
 from app.models.tables import Usuario, db
 import random

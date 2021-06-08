@@ -12,19 +12,19 @@ import jwt
 # from app. import filmes
 
 
-app = Flask(__name__)
+api = Flask(__name__)
 
-app.config.from_object("config")
+api.config.from_object("config")
 
-db = SQLAlchemy(app)
+db = SQLAlchemy(api)
 login_manager = LoginManager()
-login_manager.init_app(app)
+login_manager.init_app(api)
 
-mail = Mail(app)
+mail = Mail(api)
 
 from app.filmes.routes import filmes
 
-app.register_blueprint(filmes)
+api.register_blueprint(filmes)
 
 @login_manager.user_loader
 def get_user(user_id):
