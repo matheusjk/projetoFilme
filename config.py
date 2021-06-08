@@ -11,7 +11,7 @@ SECRET_KEY = "pythonFilmes"
 
 MAIL_SERVER = 'smtp-mail.outlook.com'
 MAIL_PORT = 587
-MAIL_USERNAME = 'matheusrodriguesh@hotmail.com'
-MAIL_PASSWORD = '85122504jk'
+MAIL_USERNAME = ''
+MAIL_PASSWORD = ''
 MAIL_USER_TLS = True
 MAIL_USER_SSL = False
