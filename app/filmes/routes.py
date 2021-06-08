@@ -7,6 +7,7 @@ filmes = Blueprint('filmes', __name__, template_folder='templates', url_prefix='
 
 @filmes.route("/")
 def teste():
+    os.chdir(api.config['UPLOAD_FOLDER'])
     form = UploadArquivo()
     print(os.listdir(os.getcwd()))
     video =  [url for url in os.listdir(api.config['UPLOAD_FOLDER']) if "mp4" in url]
