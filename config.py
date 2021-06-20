@@ -2,7 +2,7 @@ DEBUG = True
 
 UPLOAD_FOLDER = '/home/matheus/Documentos/projetoFilmes/app/static/filmesSeries'
 MAX_CONTENT_PATH = 1024 * 1024
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'mp4', 'mpeg'}
+ALLOWED_EXTENSIONS = {'mp4', 'mpeg'}
 
 SQLALCHEMY_DATABASE_URI = ""
 
