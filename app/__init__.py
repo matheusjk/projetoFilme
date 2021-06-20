@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, url_for, redirect, Blueprint, session
+from flask import Flask, render_template, request, flash, url_for, redirect, Blueprint, session, Response
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
