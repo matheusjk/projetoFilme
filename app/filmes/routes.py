@@ -12,7 +12,7 @@ def teste():
     print(os.listdir(os.getcwd()))
     video =  [url for url in os.listdir(api.config['UPLOAD_FOLDER']) if "mp4" in url]
     # print("URL {}".format(video))
-    return render_template('index.html', form=form, filmesPath=video)
+    return render_template('index.html', form=form, filmesPath=sorted(video))
 
 def extensaoArquivo(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in api.config['ALLOWED_EXTENSIONS']
